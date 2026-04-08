@@ -104,37 +104,55 @@ export default function Home() {
       </section>
 
       {/* 3. BAKER SERVICES / FEATURES */}
-      <section className="py-24 bg-baker-900 text-center relative text-white">
+      <section className="relative py-24 bg-baker-900 text-center text-white overflow-hidden">
+        {/* HOMOGENEOUS WOW BACKGROUND: Giant elegant watermark text layered behind the content */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex justify-center items-center opacity-[0.03] pointer-events-none select-none z-0">
+           <span className="font-serif font-bold text-[12rem] md:text-[20rem] leading-none whitespace-nowrap text-white">PATISSERIE</span>
+        </div>
+
         <div className="container mx-auto px-4 md:px-8 lg:px-12 relative z-10">
           <div className="mb-16">
             <p className="text-baker-500 uppercase tracking-[0.2em] font-medium text-sm mb-3">Our Services</p>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold">What Do We Offer For You?</h2>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold !text-white leading-tight">
+              What Do We Offer For You?
+            </h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white/5 backdrop-blur-sm p-10 border border-white/10 hover:border-baker-500 transition-colors group rounded-sm">
+            
+            {/* Service 1 */}
+            <div className="bg-white/5 backdrop-blur-sm p-10 border border-white/10 hover:border-baker-500 transition-all group rounded-sm hover:-translate-y-2 duration-300">
               <div className="w-20 h-20 bg-baker-500 text-white rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-white group-hover:text-baker-500 transition-colors">
                  <ShoppingBag className="w-10 h-10" />
               </div>
-              <h3 className="font-serif text-2xl font-bold mb-4">Quality Artisanal Sweets</h3>
-              <p className="text-white/70">Magna sea amet stet diam dolor sed justo stet amet. Diam diam eos et eos.</p>
+              <h3 className="font-serif text-2xl font-bold !text-white mb-4">Artisanal Collections</h3>
+              <p className="text-white/70">
+                Curated selections of authentic Tunisian sweets, crafted with single-origin almonds and pure honey for everyday indulgence.
+              </p>
             </div>
             
-             <div className="bg-white/5 backdrop-blur-sm p-10 border border-white/10 hover:border-baker-500 transition-colors group rounded-sm">
+            {/* Service 2 */}
+            <div className="bg-white/5 backdrop-blur-sm p-10 border border-white/10 hover:border-baker-500 transition-all group rounded-sm hover:-translate-y-2 duration-300">
               <div className="w-20 h-20 bg-baker-500 text-white rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-white group-hover:text-baker-500 transition-colors">
                  <Heart className="w-10 h-10" />
               </div>
-              <h3 className="font-serif text-2xl font-bold mb-4">Wedding Packages</h3>
-              <p className="text-white/70">Magna sea amet stet diam dolor sed justo stet amet. Diam diam eos et eos.</p>
+              <h3 className="font-serif text-2xl font-bold !text-white mb-4">Weddings & Events</h3>
+              <p className="text-white/70">
+                Bespoke pastry towers and elegant favors that add a touch of sophisticated sweet heritage to your most memorable celebrations.
+              </p>
             </div>
 
-            <div className="bg-white/5 backdrop-blur-sm p-10 border border-white/10 hover:border-baker-500 transition-colors group rounded-sm">
+            {/* Service 3 */}
+            <div className="bg-white/5 backdrop-blur-sm p-10 border border-white/10 hover:border-baker-500 transition-all group rounded-sm hover:-translate-y-2 duration-300">
               <div className="w-20 h-20 bg-baker-500 text-white rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-white group-hover:text-baker-500 transition-colors">
                  <Award className="w-10 h-10" />
               </div>
-              <h3 className="font-serif text-2xl font-bold mb-4">Corporate Gifting</h3>
-              <p className="text-white/70">Magna sea amet stet diam dolor sed justo stet amet. Diam diam eos et eos.</p>
+              <h3 className="font-serif text-2xl font-bold !text-white mb-4">Corporate Gifting</h3>
+              <p className="text-white/70">
+                Make a lasting impression with customized, luxurious gift boxes designed to delight your esteemed clients and corporate partners.
+              </p>
             </div>
+
           </div>
         </div>
       </section>

@@ -40,13 +40,15 @@ export default function Category() {
   return (
     <div className="bg-white min-h-screen">
       {/* Baker Style Category Header */}
-      <section className="bg-baker-900 pt-32 pb-16 text-center text-white relative">
-        <h1 className="font-serif text-5xl md:text-6xl font-bold mb-4 z-10 relative">{title}</h1>
+      <section className="bg-baker-900 pt-24 pb-8 text-center text-white relative">
+        <h1 className="font-serif text-5xl md:text-6xl font-bold !text-white mb-4 z-10 relative">{title}</h1>
         {/* Breadcrumb style */}
         <div className="flex items-center justify-center gap-2 text-baker-500 font-medium tracking-wide uppercase text-sm z-10 relative">
           <Link to="/" className="hover:text-white transition-colors">Home</Link>
           <span className="text-white/50">/</span>
-          <span className="text-white">Products</span>
+          <Link to="/products" className="hover:text-white transition-colors">Products</Link>
+          <span className="text-white/50">/</span>
+          <span className="text-white">{title}</span>
         </div>
       </section>
 
